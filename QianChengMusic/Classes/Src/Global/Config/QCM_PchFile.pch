@@ -1,0 +1,18 @@
+//
+//  QCM_PchFile.pch
+//  QianChengMusic
+//
+//  Created by Jn_Kindle on 2018/9/13.
+//  Copyright © 2018年 JnKindle. All rights reserved.
+//
+
+#ifndef QCM_PchFile_pch
+#define QCM_PchFile_pch
+
+#import "Size_Config.h"
+#import "System_Config.h"
+#import "Color_Config.h"
+#import "GlobalHeader.h"
+#import "ConstString.h"
+
+#endif /* QCM_PchFile_pch */

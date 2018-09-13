@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D799BE3D214A070900AAF560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE3C214A070900AAF560 /* AppDelegate.m */; };
-		D799BE40214A070900AAF560 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE3F214A070900AAF560 /* ViewController.m */; };
-		D799BE43214A070900AAF560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE41214A070900AAF560 /* Main.storyboard */; };
-		D799BE45214A070B00AAF560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D799BE44214A070B00AAF560 /* Assets.xcassets */; };
-		D799BE48214A070B00AAF560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */; };
-		D799BE4B214A070B00AAF560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE4A214A070B00AAF560 /* main.m */; };
+		610655B90D90BA4EDAB4DA9F /* libPods-QianChengMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C738E70F38257A18EFF54 /* libPods-QianChengMusic.a */; };
 		D799BE55214A070B00AAF560 /* QianChengMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE54214A070B00AAF560 /* QianChengMusicTests.m */; };
 		D799BE60214A070B00AAF560 /* QianChengMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */; };
+		D799BE7D214A0B2200AAF560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE71214A0B2200AAF560 /* AppDelegate.m */; };
+		D799BE7E214A0B2200AAF560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D799BE75214A0B2200AAF560 /* Assets.xcassets */; };
+		D799BE7F214A0B2200AAF560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE76214A0B2200AAF560 /* LaunchScreen.storyboard */; };
+		D799BE80214A0B2200AAF560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE78214A0B2200AAF560 /* Main.storyboard */; };
+		D799BE81214A0B2200AAF560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE7A214A0B2200AAF560 /* main.m */; };
+		D799BE82214A0B2200AAF560 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D799BE7B214A0B2200AAF560 /* Info.plist */; };
+		D799BE89214A0D1500AAF560 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE88214A0D1500AAF560 /* MainController.m */; };
+		D799BE8D214A153700AAF560 /* JNPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE8C214A153700AAF560 /* JNPlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +38,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0576527C951DD80D983026E5 /* Pods-QianChengMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianChengMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		D799BE38214A070900AAF560 /* QianChengMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianChengMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D799BE3B214A070900AAF560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D799BE3C214A070900AAF560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D799BE3E214A070900AAF560 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D799BE3F214A070900AAF560 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D799BE42214A070900AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D799BE44214A070B00AAF560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D799BE47214A070B00AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D799BE49214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D799BE4A214A070B00AAF560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D799BE50214A070B00AAF560 /* QianChengMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QianChengMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D799BE54214A070B00AAF560 /* QianChengMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QianChengMusicTests.m; sourceTree = "<group>"; };
 		D799BE56214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D799BE5B214A070B00AAF560 /* QianChengMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QianChengMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QianChengMusicUITests.m; sourceTree = "<group>"; };
 		D799BE61214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D799BE70214A0B2200AAF560 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D799BE71214A0B2200AAF560 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D799BE75214A0B2200AAF560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D799BE77214A0B2200AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D799BE79214A0B2200AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D799BE7A214A0B2200AAF560 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D799BE7B214A0B2200AAF560 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D799BE87214A0D1500AAF560 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		D799BE88214A0D1500AAF560 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		D799BE8B214A153700AAF560 /* JNPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNPlayView.h; sourceTree = "<group>"; };
+		D799BE8C214A153700AAF560 /* JNPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNPlayView.m; sourceTree = "<group>"; };
+		D799BE92214A181000AAF560 /* QCM_PchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCM_PchFile.pch; sourceTree = "<group>"; };
+		D799BE93214A378100AAF560 /* Size_Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Size_Config.h; sourceTree = "<group>"; };
+		D799BE94214A39E100AAF560 /* System_Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = System_Config.h; sourceTree = "<group>"; };
+		D799BE95214A3AB200AAF560 /* Color_Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color_Config.h; sourceTree = "<group>"; };
+		D799BE96214A3AFB00AAF560 /* GlobalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalHeader.h; sourceTree = "<group>"; };
+		D799BE97214A3B1600AAF560 /* ConstString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstString.h; sourceTree = "<group>"; };
+		EB1C738E70F38257A18EFF54 /* libPods-QianChengMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QianChengMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54AADE4ACF4D27BFE4170F2 /* Pods-QianChengMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianChengMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610655B90D90BA4EDAB4DA9F /* libPods-QianChengMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3526821D14B4C8D7464F16FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0576527C951DD80D983026E5 /* Pods-QianChengMusic.debug.xcconfig */,
+				F54AADE4ACF4D27BFE4170F2 /* Pods-QianChengMusic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97E7B36D99DA787BA1E28664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C738E70F38257A18EFF54 /* libPods-QianChengMusic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D799BE2F214A070900AAF560 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +117,8 @@
 				D799BE53214A070B00AAF560 /* QianChengMusicTests */,
 				D799BE5E214A070B00AAF560 /* QianChengMusicUITests */,
 				D799BE39214A070900AAF560 /* Products */,
+				3526821D14B4C8D7464F16FF /* Pods */,
+				97E7B36D99DA787BA1E28664 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +135,10 @@
 		D799BE3A214A070900AAF560 /* QianChengMusic */ = {
 			isa = PBXGroup;
 			children = (
-				D799BE3B214A070900AAF560 /* AppDelegate.h */,
-				D799BE3C214A070900AAF560 /* AppDelegate.m */,
-				D799BE3E214A070900AAF560 /* ViewController.h */,
-				D799BE3F214A070900AAF560 /* ViewController.m */,
-				D799BE41214A070900AAF560 /* Main.storyboard */,
-				D799BE44214A070B00AAF560 /* Assets.xcassets */,
-				D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */,
-				D799BE49214A070B00AAF560 /* Info.plist */,
-				D799BE4A214A070B00AAF560 /* main.m */,
+				D799BE8A214A123B00AAF560 /* Framework */,
+				D799BE6D214A0B2200AAF560 /* Classes */,
+				D799BE74214A0B2200AAF560 /* Other */,
+				D799BE7C214A0B2200AAF560 /* Resource */,
 			);
 			path = QianChengMusic;
 			sourceTree = "<group>";
@@ -132,6 +161,139 @@
 			path = QianChengMusicUITests;
 			sourceTree = "<group>";
 		};
+		D799BE6D214A0B2200AAF560 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE72214A0B2200AAF560 /* Base */,
+				D799BE6F214A0B2200AAF560 /* AppDelegate */,
+				D799BE6E214A0B2200AAF560 /* ThirdPart */,
+				D799BE73214A0B2200AAF560 /* Src */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D799BE6E214A0B2200AAF560 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		D799BE6F214A0B2200AAF560 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE70214A0B2200AAF560 /* AppDelegate.h */,
+				D799BE71214A0B2200AAF560 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D799BE72214A0B2200AAF560 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D799BE73214A0B2200AAF560 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE8E214A178100AAF560 /* Global */,
+				D799BE83214A0C4B00AAF560 /* Main */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		D799BE74214A0B2200AAF560 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE75214A0B2200AAF560 /* Assets.xcassets */,
+				D799BE76214A0B2200AAF560 /* LaunchScreen.storyboard */,
+				D799BE78214A0B2200AAF560 /* Main.storyboard */,
+				D799BE7A214A0B2200AAF560 /* main.m */,
+				D799BE7B214A0B2200AAF560 /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D799BE7C214A0B2200AAF560 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D799BE83214A0C4B00AAF560 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE84214A0C4B00AAF560 /* Controller */,
+				D799BE85214A0C4B00AAF560 /* Model */,
+				D799BE86214A0C4B00AAF560 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D799BE84214A0C4B00AAF560 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE87214A0D1500AAF560 /* MainController.h */,
+				D799BE88214A0D1500AAF560 /* MainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D799BE85214A0C4B00AAF560 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D799BE86214A0C4B00AAF560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE8B214A153700AAF560 /* JNPlayView.h */,
+				D799BE8C214A153700AAF560 /* JNPlayView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D799BE8A214A123B00AAF560 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		D799BE8E214A178100AAF560 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE8F214A178100AAF560 /* Config */,
+				D799BE90214A178100AAF560 /* Function */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D799BE8F214A178100AAF560 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE92214A181000AAF560 /* QCM_PchFile.pch */,
+				D799BE93214A378100AAF560 /* Size_Config.h */,
+				D799BE94214A39E100AAF560 /* System_Config.h */,
+				D799BE95214A3AB200AAF560 /* Color_Config.h */,
+				D799BE96214A3AFB00AAF560 /* GlobalHeader.h */,
+				D799BE97214A3B1600AAF560 /* ConstString.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D799BE90214A178100AAF560 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D799BE64214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusic" */;
 			buildPhases = (
+				CAECE8587EB56BED4C233376 /* [CP] Check Pods Manifest.lock */,
 				D799BE34214A070900AAF560 /* Sources */,
 				D799BE35214A070900AAF560 /* Frameworks */,
 				D799BE36214A070900AAF560 /* Resources */,
+				33C5A370212331C7621884DA /* [CP] Embed Pods Frameworks */,
+				13460CAA1B51B88E0C3E0B4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +359,7 @@
 		D799BE30214A070900AAF560 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JN;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = JnKindle;
 				TargetAttributes = {
@@ -235,9 +401,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D799BE48214A070B00AAF560 /* LaunchScreen.storyboard in Resources */,
-				D799BE45214A070B00AAF560 /* Assets.xcassets in Resources */,
-				D799BE43214A070900AAF560 /* Main.storyboard in Resources */,
+				D799BE80214A0B2200AAF560 /* Main.storyboard in Resources */,
+				D799BE82214A0B2200AAF560 /* Info.plist in Resources */,
+				D799BE7F214A0B2200AAF560 /* LaunchScreen.storyboard in Resources */,
+				D799BE7E214A0B2200AAF560 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +424,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13460CAA1B51B88E0C3E0B4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C5A370212331C7621884DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAECE8587EB56BED4C233376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QianChengMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D799BE34214A070900AAF560 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D799BE40214A070900AAF560 /* ViewController.m in Sources */,
-				D799BE4B214A070B00AAF560 /* main.m in Sources */,
-				D799BE3D214A070900AAF560 /* AppDelegate.m in Sources */,
+				D799BE8D214A153700AAF560 /* JNPlayView.m in Sources */,
+				D799BE81214A0B2200AAF560 /* main.m in Sources */,
+				D799BE89214A0D1500AAF560 /* MainController.m in Sources */,
+				D799BE7D214A0B2200AAF560 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +519,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D799BE41214A070900AAF560 /* Main.storyboard */ = {
+		D799BE76214A0B2200AAF560 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D799BE42214A070900AAF560 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D799BE47214A070B00AAF560 /* Base */,
+				D799BE77214A0B2200AAF560 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D799BE78214A0B2200AAF560 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D799BE79214A0B2200AAF560 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,15 +650,15 @@
 		};
 		D799BE65214A070B00AAF560 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0576527C951DD80D983026E5 /* Pods-QianChengMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
-				INFOPLIST_FILE = QianChengMusic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianChengMusic/Classes/Src/Global/Config/QCM_PchFile.pch";
+				INFOPLIST_FILE = QianChengMusic/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,15 +667,15 @@
 		};
 		D799BE66214A070B00AAF560 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54AADE4ACF4D27BFE4170F2 /* Pods-QianChengMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
-				INFOPLIST_FILE = QianChengMusic/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianChengMusic/Classes/Src/Global/Config/QCM_PchFile.pch";
+				INFOPLIST_FILE = QianChengMusic/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,11 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
 				INFOPLIST_FILE = QianChengMusicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
 				INFOPLIST_FILE = QianChengMusicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
 				INFOPLIST_FILE = QianChengMusicUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T6M24N5BR;
 				INFOPLIST_FILE = QianChengMusicUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
