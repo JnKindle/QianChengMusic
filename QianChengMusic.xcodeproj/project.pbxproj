@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D799BE3D214A070900AAF560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE3C214A070900AAF560 /* AppDelegate.m */; };
+		D799BE40214A070900AAF560 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE3F214A070900AAF560 /* ViewController.m */; };
+		D799BE43214A070900AAF560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE41214A070900AAF560 /* Main.storyboard */; };
+		D799BE45214A070B00AAF560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D799BE44214A070B00AAF560 /* Assets.xcassets */; };
+		D799BE48214A070B00AAF560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */; };
+		D799BE4B214A070B00AAF560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE4A214A070B00AAF560 /* main.m */; };
+		D799BE55214A070B00AAF560 /* QianChengMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE54214A070B00AAF560 /* QianChengMusicTests.m */; };
+		D799BE60214A070B00AAF560 /* QianChengMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D799BE51214A070B00AAF560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D799BE30214A070900AAF560 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D799BE37214A070900AAF560;
+			remoteInfo = QianChengMusic;
+		};
+		D799BE5C214A070B00AAF560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D799BE30214A070900AAF560 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D799BE37214A070900AAF560;
+			remoteInfo = QianChengMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D799BE38214A070900AAF560 /* QianChengMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianChengMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D799BE3B214A070900AAF560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D799BE3C214A070900AAF560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D799BE3E214A070900AAF560 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D799BE3F214A070900AAF560 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D799BE42214A070900AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D799BE44214A070B00AAF560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D799BE47214A070B00AAF560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D799BE49214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D799BE4A214A070B00AAF560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D799BE50214A070B00AAF560 /* QianChengMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QianChengMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D799BE54214A070B00AAF560 /* QianChengMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QianChengMusicTests.m; sourceTree = "<group>"; };
+		D799BE56214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D799BE5B214A070B00AAF560 /* QianChengMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QianChengMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QianChengMusicUITests.m; sourceTree = "<group>"; };
+		D799BE61214A070B00AAF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D799BE35214A070900AAF560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE4D214A070B00AAF560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE58214A070B00AAF560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D799BE2F214A070900AAF560 = {
+			isa = PBXGroup;
+			children = (
+				D799BE3A214A070900AAF560 /* QianChengMusic */,
+				D799BE53214A070B00AAF560 /* QianChengMusicTests */,
+				D799BE5E214A070B00AAF560 /* QianChengMusicUITests */,
+				D799BE39214A070900AAF560 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D799BE39214A070900AAF560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE38214A070900AAF560 /* QianChengMusic.app */,
+				D799BE50214A070B00AAF560 /* QianChengMusicTests.xctest */,
+				D799BE5B214A070B00AAF560 /* QianChengMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D799BE3A214A070900AAF560 /* QianChengMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE3B214A070900AAF560 /* AppDelegate.h */,
+				D799BE3C214A070900AAF560 /* AppDelegate.m */,
+				D799BE3E214A070900AAF560 /* ViewController.h */,
+				D799BE3F214A070900AAF560 /* ViewController.m */,
+				D799BE41214A070900AAF560 /* Main.storyboard */,
+				D799BE44214A070B00AAF560 /* Assets.xcassets */,
+				D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */,
+				D799BE49214A070B00AAF560 /* Info.plist */,
+				D799BE4A214A070B00AAF560 /* main.m */,
+			);
+			path = QianChengMusic;
+			sourceTree = "<group>";
+		};
+		D799BE53214A070B00AAF560 /* QianChengMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE54214A070B00AAF560 /* QianChengMusicTests.m */,
+				D799BE56214A070B00AAF560 /* Info.plist */,
+			);
+			path = QianChengMusicTests;
+			sourceTree = "<group>";
+		};
+		D799BE5E214A070B00AAF560 /* QianChengMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */,
+				D799BE61214A070B00AAF560 /* Info.plist */,
+			);
+			path = QianChengMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D799BE37214A070900AAF560 /* QianChengMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D799BE64214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusic" */;
+			buildPhases = (
+				D799BE34214A070900AAF560 /* Sources */,
+				D799BE35214A070900AAF560 /* Frameworks */,
+				D799BE36214A070900AAF560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QianChengMusic;
+			productName = QianChengMusic;
+			productReference = D799BE38214A070900AAF560 /* QianChengMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D799BE4F214A070B00AAF560 /* QianChengMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D799BE67214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusicTests" */;
+			buildPhases = (
+				D799BE4C214A070B00AAF560 /* Sources */,
+				D799BE4D214A070B00AAF560 /* Frameworks */,
+				D799BE4E214A070B00AAF560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D799BE52214A070B00AAF560 /* PBXTargetDependency */,
+			);
+			name = QianChengMusicTests;
+			productName = QianChengMusicTests;
+			productReference = D799BE50214A070B00AAF560 /* QianChengMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D799BE5A214A070B00AAF560 /* QianChengMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D799BE6A214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusicUITests" */;
+			buildPhases = (
+				D799BE57214A070B00AAF560 /* Sources */,
+				D799BE58214A070B00AAF560 /* Frameworks */,
+				D799BE59214A070B00AAF560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D799BE5D214A070B00AAF560 /* PBXTargetDependency */,
+			);
+			name = QianChengMusicUITests;
+			productName = QianChengMusicUITests;
+			productReference = D799BE5B214A070B00AAF560 /* QianChengMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D799BE30214A070900AAF560 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = JnKindle;
+				TargetAttributes = {
+					D799BE37214A070900AAF560 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D799BE4F214A070B00AAF560 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D799BE37214A070900AAF560;
+					};
+					D799BE5A214A070B00AAF560 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D799BE37214A070900AAF560;
+					};
+				};
+			};
+			buildConfigurationList = D799BE33214A070900AAF560 /* Build configuration list for PBXProject "QianChengMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D799BE2F214A070900AAF560;
+			productRefGroup = D799BE39214A070900AAF560 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D799BE37214A070900AAF560 /* QianChengMusic */,
+				D799BE4F214A070B00AAF560 /* QianChengMusicTests */,
+				D799BE5A214A070B00AAF560 /* QianChengMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D799BE36214A070900AAF560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D799BE48214A070B00AAF560 /* LaunchScreen.storyboard in Resources */,
+				D799BE45214A070B00AAF560 /* Assets.xcassets in Resources */,
+				D799BE43214A070900AAF560 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE4E214A070B00AAF560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE59214A070B00AAF560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D799BE34214A070900AAF560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D799BE40214A070900AAF560 /* ViewController.m in Sources */,
+				D799BE4B214A070B00AAF560 /* main.m in Sources */,
+				D799BE3D214A070900AAF560 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE4C214A070B00AAF560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D799BE55214A070B00AAF560 /* QianChengMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D799BE57214A070B00AAF560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D799BE60214A070B00AAF560 /* QianChengMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D799BE52214A070B00AAF560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D799BE37214A070900AAF560 /* QianChengMusic */;
+			targetProxy = D799BE51214A070B00AAF560 /* PBXContainerItemProxy */;
+		};
+		D799BE5D214A070B00AAF560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D799BE37214A070900AAF560 /* QianChengMusic */;
+			targetProxy = D799BE5C214A070B00AAF560 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D799BE41214A070900AAF560 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D799BE42214A070900AAF560 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D799BE46214A070B00AAF560 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D799BE47214A070B00AAF560 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D799BE62214A070B00AAF560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D799BE63214A070B00AAF560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D799BE65214A070B00AAF560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D799BE66214A070B00AAF560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D799BE68214A070B00AAF560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QianChengMusic.app/QianChengMusic";
+			};
+			name = Debug;
+		};
+		D799BE69214A070B00AAF560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QianChengMusic.app/QianChengMusic";
+			};
+			name = Release;
+		};
+		D799BE6B214A070B00AAF560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QianChengMusic;
+			};
+			name = Debug;
+		};
+		D799BE6C214A070B00AAF560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6M24N5BR;
+				INFOPLIST_FILE = QianChengMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdos.QianChengMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QianChengMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D799BE33214A070900AAF560 /* Build configuration list for PBXProject "QianChengMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D799BE62214A070B00AAF560 /* Debug */,
+				D799BE63214A070B00AAF560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D799BE64214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D799BE65214A070B00AAF560 /* Debug */,
+				D799BE66214A070B00AAF560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D799BE67214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D799BE68214A070B00AAF560 /* Debug */,
+				D799BE69214A070B00AAF560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D799BE6A214A070B00AAF560 /* Build configuration list for PBXNativeTarget "QianChengMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D799BE6B214A070B00AAF560 /* Debug */,
+				D799BE6C214A070B00AAF560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D799BE30214A070900AAF560 /* Project object */;
+}
