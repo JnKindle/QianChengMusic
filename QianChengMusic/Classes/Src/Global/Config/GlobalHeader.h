@@ -10,6 +10,8 @@
 #define GlobalHeader_h
 
 
+#import "UILabel+Addtion.h"
+
 #import <Masonry/Masonry.h>
 
 #endif /* GlobalHeader_h */
