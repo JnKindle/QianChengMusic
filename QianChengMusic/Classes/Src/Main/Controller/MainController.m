@@ -24,7 +24,7 @@
         JNPlayView *playView = [[JNPlayView alloc] init];
         [self.view addSubview:playView];
         [playView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.right.with.mas_equalTo(self.view);
+            make.top.left.right.bottom.mas_equalTo(self.view);
         }];
         _playView = playView;
     }
@@ -38,6 +38,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self playView];
     
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {

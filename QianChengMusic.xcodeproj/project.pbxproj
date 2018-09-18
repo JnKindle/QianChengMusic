@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		610655B90D90BA4EDAB4DA9F /* libPods-QianChengMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C738E70F38257A18EFF54 /* libPods-QianChengMusic.a */; };
+		D79080DD21508E8D001E4FBC /* UIWindow+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080DC21508E8D001E4FBC /* UIWindow+Addtion.m */; };
+		D79080E32150A529001E4FBC /* JNBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080E22150A529001E4FBC /* JNBaseTableView.m */; };
+		D79080E62150A909001E4FBC /* JNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080E52150A909001E4FBC /* JNBaseTableViewCell.m */; };
+		D79080E92150D56D001E4FBC /* JNLyricsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080E82150D56D001E4FBC /* JNLyricsModel.m */; };
+		D79080EC2150D889001E4FBC /* 情非得已.lrc in Resources */ = {isa = PBXBuildFile; fileRef = D79080EB2150D889001E4FBC /* 情非得已.lrc */; };
 		D791924F214BB73300D457E8 /* UILabel+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = D791924E214BB73300D457E8 /* UILabel+Addtion.m */; };
 		D799BE55214A070B00AAF560 /* QianChengMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE54214A070B00AAF560 /* QianChengMusicTests.m */; };
 		D799BE60214A070B00AAF560 /* QianChengMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D799BE5F214A070B00AAF560 /* QianChengMusicUITests.m */; };
@@ -41,6 +46,15 @@
 
 /* Begin PBXFileReference section */
 		0576527C951DD80D983026E5 /* Pods-QianChengMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianChengMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		D79080DB21508E8D001E4FBC /* UIWindow+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Addtion.h"; sourceTree = "<group>"; };
+		D79080DC21508E8D001E4FBC /* UIWindow+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Addtion.m"; sourceTree = "<group>"; };
+		D79080E12150A529001E4FBC /* JNBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNBaseTableView.h; sourceTree = "<group>"; };
+		D79080E22150A529001E4FBC /* JNBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNBaseTableView.m; sourceTree = "<group>"; };
+		D79080E42150A909001E4FBC /* JNBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNBaseTableViewCell.h; sourceTree = "<group>"; };
+		D79080E52150A909001E4FBC /* JNBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNBaseTableViewCell.m; sourceTree = "<group>"; };
+		D79080E72150D56D001E4FBC /* JNLyricsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNLyricsModel.h; sourceTree = "<group>"; };
+		D79080E82150D56D001E4FBC /* JNLyricsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNLyricsModel.m; sourceTree = "<group>"; };
+		D79080EB2150D889001E4FBC /* 情非得已.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "情非得已.lrc"; sourceTree = "<group>"; };
 		D791924D214BB73300D457E8 /* UILabel+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addtion.h"; sourceTree = "<group>"; };
 		D791924E214BB73300D457E8 /* UILabel+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addtion.m"; sourceTree = "<group>"; };
 		D799BE38214A070900AAF560 /* QianChengMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianChengMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +130,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D79080DE2150A504001E4FBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D79080DF2150A504001E4FBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D79080E12150A529001E4FBC /* JNBaseTableView.h */,
+				D79080E22150A529001E4FBC /* JNBaseTableView.m */,
+				D79080E42150A909001E4FBC /* JNBaseTableViewCell.h */,
+				D79080E52150A909001E4FBC /* JNBaseTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D79080E02150A504001E4FBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D79080EA2150D889001E4FBC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D79080EB2150D889001E4FBC /* 情非得已.lrc */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		D791924C214BB6F500D457E8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +170,8 @@
 				D791924E214BB73300D457E8 /* UILabel+Addtion.m */,
 				D7AEDAED214FA7930086598B /* UIColor+Addtion.h */,
 				D7AEDAEE214FA7930086598B /* UIColor+Addtion.m */,
+				D79080DB21508E8D001E4FBC /* UIWindow+Addtion.h */,
+				D79080DC21508E8D001E4FBC /* UIWindow+Addtion.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -209,6 +258,9 @@
 		D799BE72214A0B2200AAF560 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D79080E02150A504001E4FBC /* Controllers */,
+				D79080DE2150A504001E4FBC /* Models */,
+				D79080DF2150A504001E4FBC /* Views */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -244,6 +296,7 @@
 		D799BE83214A0C4B00AAF560 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D79080EA2150D889001E4FBC /* Resource */,
 				D799BE84214A0C4B00AAF560 /* Controller */,
 				D799BE85214A0C4B00AAF560 /* Model */,
 				D799BE86214A0C4B00AAF560 /* Views */,
@@ -263,6 +316,8 @@
 		D799BE85214A0C4B00AAF560 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D79080E72150D56D001E4FBC /* JNLyricsModel.h */,
+				D79080E82150D56D001E4FBC /* JNLyricsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,6 +477,7 @@
 				D799BE80214A0B2200AAF560 /* Main.storyboard in Resources */,
 				D799BE82214A0B2200AAF560 /* Info.plist in Resources */,
 				D799BE7F214A0B2200AAF560 /* LaunchScreen.storyboard in Resources */,
+				D79080EC2150D889001E4FBC /* 情非得已.lrc in Resources */,
 				D799BE7E214A0B2200AAF560 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,10 +556,14 @@
 			files = (
 				D799BE8D214A153700AAF560 /* JNPlayView.m in Sources */,
 				D7AEDAEF214FA7930086598B /* UIColor+Addtion.m in Sources */,
+				D79080E32150A529001E4FBC /* JNBaseTableView.m in Sources */,
 				D799BE81214A0B2200AAF560 /* main.m in Sources */,
 				D799BE89214A0D1500AAF560 /* MainController.m in Sources */,
 				D791924F214BB73300D457E8 /* UILabel+Addtion.m in Sources */,
 				D799BE7D214A0B2200AAF560 /* AppDelegate.m in Sources */,
+				D79080E92150D56D001E4FBC /* JNLyricsModel.m in Sources */,
+				D79080E62150A909001E4FBC /* JNBaseTableViewCell.m in Sources */,
+				D79080DD21508E8D001E4FBC /* UIWindow+Addtion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

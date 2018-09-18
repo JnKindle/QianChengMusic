@@ -9,6 +9,10 @@
 #ifndef System_Config_h
 #define System_Config_h
 
+//当前系统显示页面
+#define JNKEYWINDOW [UIApplication sharedApplication].keyWindow //当前窗口
+#define JNAPPCurrentController JNKEYWINDOW.currentController //当前显示的控制器
+#define JNAPPCurrentView JNKEYWINDOW.currentController.view //当前显示的页面
 
 //APP Version
 #define JN_APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]

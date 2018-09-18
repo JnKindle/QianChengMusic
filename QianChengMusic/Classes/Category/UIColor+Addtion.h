@@ -11,7 +11,7 @@
 @interface UIColor (Addtion)
 
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
-+(UIColor *)colorwithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha;
++ (UIColor *)colorwithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha;
 + (UIColor *)colorWithHexString:(NSString *)color;
 
 @end
