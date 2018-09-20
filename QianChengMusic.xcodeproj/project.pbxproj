@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		610655B90D90BA4EDAB4DA9F /* libPods-QianChengMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C738E70F38257A18EFF54 /* libPods-QianChengMusic.a */; };
+		D74D49982151F1B200056C64 /* UIButton+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D49972151F1B200056C64 /* UIButton+Addtion.m */; };
+		D74D499B2151FECC00056C64 /* JNGlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D499A2151FECC00056C64 /* JNGlobalFunction.m */; };
+		D74D499D21522C5A00056C64 /* 情非得已.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D74D499C21522C5A00056C64 /* 情非得已.mp3 */; };
+		D74D499F21524D7500056C64 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D74D499E21524D7400056C64 /* background.jpg */; };
+		D74D49A12152539300056C64 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D74D49A02152539300056C64 /* test2.jpg */; };
 		D79080DD21508E8D001E4FBC /* UIWindow+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080DC21508E8D001E4FBC /* UIWindow+Addtion.m */; };
 		D79080E32150A529001E4FBC /* JNBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080E22150A529001E4FBC /* JNBaseTableView.m */; };
 		D79080E62150A909001E4FBC /* JNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79080E52150A909001E4FBC /* JNBaseTableViewCell.m */; };
@@ -46,6 +51,13 @@
 
 /* Begin PBXFileReference section */
 		0576527C951DD80D983026E5 /* Pods-QianChengMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianChengMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QianChengMusic/Pods-QianChengMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		D74D49962151F1B200056C64 /* UIButton+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addtion.h"; sourceTree = "<group>"; };
+		D74D49972151F1B200056C64 /* UIButton+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addtion.m"; sourceTree = "<group>"; };
+		D74D49992151FECC00056C64 /* JNGlobalFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNGlobalFunction.h; sourceTree = "<group>"; };
+		D74D499A2151FECC00056C64 /* JNGlobalFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNGlobalFunction.m; sourceTree = "<group>"; };
+		D74D499C21522C5A00056C64 /* 情非得已.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "情非得已.mp3"; sourceTree = "<group>"; };
+		D74D499E21524D7400056C64 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		D74D49A02152539300056C64 /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
 		D79080DB21508E8D001E4FBC /* UIWindow+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Addtion.h"; sourceTree = "<group>"; };
 		D79080DC21508E8D001E4FBC /* UIWindow+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Addtion.m"; sourceTree = "<group>"; };
 		D79080E12150A529001E4FBC /* JNBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNBaseTableView.h; sourceTree = "<group>"; };
@@ -158,7 +170,10 @@
 		D79080EA2150D889001E4FBC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D74D499E21524D7400056C64 /* background.jpg */,
+				D74D49A02152539300056C64 /* test2.jpg */,
 				D79080EB2150D889001E4FBC /* 情非得已.lrc */,
+				D74D499C21522C5A00056C64 /* 情非得已.mp3 */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -168,6 +183,8 @@
 			children = (
 				D791924D214BB73300D457E8 /* UILabel+Addtion.h */,
 				D791924E214BB73300D457E8 /* UILabel+Addtion.m */,
+				D74D49962151F1B200056C64 /* UIButton+Addtion.h */,
+				D74D49972151F1B200056C64 /* UIButton+Addtion.m */,
 				D7AEDAED214FA7930086598B /* UIColor+Addtion.h */,
 				D7AEDAEE214FA7930086598B /* UIColor+Addtion.m */,
 				D79080DB21508E8D001E4FBC /* UIWindow+Addtion.h */,
@@ -363,6 +380,8 @@
 		D799BE90214A178100AAF560 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				D74D49992151FECC00056C64 /* JNGlobalFunction.h */,
+				D74D499A2151FECC00056C64 /* JNGlobalFunction.m */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -476,8 +495,11 @@
 			files = (
 				D799BE80214A0B2200AAF560 /* Main.storyboard in Resources */,
 				D799BE82214A0B2200AAF560 /* Info.plist in Resources */,
+				D74D49A12152539300056C64 /* test2.jpg in Resources */,
+				D74D499F21524D7500056C64 /* background.jpg in Resources */,
 				D799BE7F214A0B2200AAF560 /* LaunchScreen.storyboard in Resources */,
 				D79080EC2150D889001E4FBC /* 情非得已.lrc in Resources */,
+				D74D499D21522C5A00056C64 /* 情非得已.mp3 in Resources */,
 				D799BE7E214A0B2200AAF560 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,9 +576,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74D49982151F1B200056C64 /* UIButton+Addtion.m in Sources */,
 				D799BE8D214A153700AAF560 /* JNPlayView.m in Sources */,
 				D7AEDAEF214FA7930086598B /* UIColor+Addtion.m in Sources */,
 				D79080E32150A529001E4FBC /* JNBaseTableView.m in Sources */,
+				D74D499B2151FECC00056C64 /* JNGlobalFunction.m in Sources */,
 				D799BE81214A0B2200AAF560 /* main.m in Sources */,
 				D799BE89214A0D1500AAF560 /* MainController.m in Sources */,
 				D791924F214BB73300D457E8 /* UILabel+Addtion.m in Sources */,

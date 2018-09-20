@@ -7,10 +7,18 @@
 //
 
 #import "JNPlayView.h"
+#import <AVFoundation/AVFoundation.h>
 
 #import "JNLyricsModel.h"
 
-@interface JNPlayView ()<UITableViewDelegate,UITableViewDataSource>
+@interface JNPlayView ()<AVAudioPlayerDelegate,UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic, strong) NSURL *url;
+
+@property (nonatomic,strong) NSTimer * timer;
+@property (nonatomic,assign) NSInteger row;
+
 
 @property (nonatomic, weak) UIView *topView;
 @property (nonatomic, weak) UILabel *curTimeLabel;
@@ -26,6 +34,8 @@
 
 @property (nonatomic, strong) JNLyricsModel *lyricsModel;
 
+
+
 @end
 
 @implementation JNPlayView
@@ -36,10 +46,57 @@
     if (self = [super initWithFrame:frame]) {
         
         [self parsonLyrics];
+        self.timer.fireDate = [NSDate distantPast];
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            //对UItableView背景设置毛玻璃效果
+            UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.jpg"]];
+            UIBlurEffect * blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+            UIVisualEffectView * effectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+            effectView.frame = self.tableView.bounds;
+            [imageView addSubview:effectView];
+            self.tableView.backgroundView = imageView;
+        });
+        
+        
+        
     }
     return self;
 }
 
+- (AVAudioPlayer *)player
+{
+    if (!_player) {
+        NSError *error = nil;
+        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:self.url error:&error];
+        _player.delegate = self;
+        _player.numberOfLoops = 999;//单曲循环
+        _player.volume = 1.0;
+        [_player prepareToPlay]; //预播放 先读取一段音频 防止开始卡顿
+        if (error) {
+            JNLog(@"创建播放器失败");
+            return nil;
+        }
+    }
+    return _player;
+}
+
+- (NSURL *)url
+{
+    if (_url == nil) {
+        _url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"情非得已" ofType:@"mp3"]];
+    }
+    return _url;
+}
+
+- (NSTimer *)timer
+{
+    if (_timer == nil) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(change) userInfo:nil repeats:YES];
+    }
+    return _timer;
+}
 
 -(UIView *)topView
 {
@@ -101,7 +158,7 @@
 {
     if (!_tableView) {
         JNBaseTableView *tableView = [JNBaseTableView groupTableView];
-        tableView.backgroundColor = [UIColor clearColor];
+        tableView.backgroundColor = [UIColor whiteColor];
         tableView.delegate = self;
         tableView.dataSource = self;
         [self addSubview:tableView];
@@ -117,11 +174,66 @@
 {
     if (!_bottomView) {
         UIView *bottomView = [[UIView alloc] init];
-        bottomView.backgroundColor = [UIColor grayColor];
+        bottomView.backgroundColor = RGB_COLOR(66, 112, 238);
         [self addSubview:bottomView];
         _bottomView = bottomView;
     }
     return _bottomView;
+}
+
+-(UIButton *)lastButton
+{
+    if (!_lastButton) {
+        UIButton *lastButton = [UIButton commonButtonWithControl:self
+                                                          action:@selector(lastSong:)
+                                                           frame:CGRectZero
+                                                           title:@"上一曲"
+                                                 higlightedTitle:@"上一曲"
+                                                      titleColor:[UIColor whiteColor]
+                                            higlightedTitleColor:[UIColor redColor]
+                                                            font:[UIFont boldSystemFontOfSize:18*JN_FIT_WIDTH]
+                                                   textAlignment:NSTextAlignmentRight];
+        [self.bottomView addSubview:lastButton];
+        _lastButton = lastButton;
+    }
+    return _lastButton;
+}
+
+-(UIButton *)playButton
+{
+    if (!_playButton) {
+        UIButton *playButton = [UIButton commonButtonWithControl:self
+                                                          action:@selector(playSong:)
+                                                           frame:CGRectZero
+                                                           title:@"播放"
+                                                 higlightedTitle:@""
+                                                      titleColor:[UIColor whiteColor]
+                                            higlightedTitleColor:[UIColor redColor]
+                                                            font:[UIFont boldSystemFontOfSize:25*JN_FIT_WIDTH]
+                                                   textAlignment:NSTextAlignmentCenter];
+        [self.bottomView addSubview:playButton];
+        _playButton = playButton;
+    }
+    return _playButton;
+}
+
+-(UIButton *)nextButton
+{
+    if (!_nextButton) {
+        UIButton *nextButton = [UIButton commonButtonWithControl:self
+                                                          action:@selector(nextSong:)
+                                                           frame:CGRectZero
+                                                           title:@"下一曲"
+                                                 higlightedTitle:@"下一曲"
+                                                      titleColor:[UIColor whiteColor]
+                                            higlightedTitleColor:[UIColor redColor]
+                                                            font:[UIFont boldSystemFontOfSize:18*JN_FIT_WIDTH]
+                                                   textAlignment:NSTextAlignmentLeft];
+        
+        [self.bottomView addSubview:nextButton];
+        _nextButton = nextButton;
+    }
+    return _nextButton;
 }
 
 -(JNLyricsModel *)lyricsModel
@@ -222,10 +334,16 @@
 {
     JNBaseTableViewCell *cell = [JNBaseTableViewCell cellWithTableView:tableView style:UITableViewCellStyleDefault Identifier:NSStringFromClass([JNBaseTableViewCell class])];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor clearColor];
     
     cell.textLabel.text = self.lyricsModel.wordsArr[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.row == indexPath.row) {
+        cell.textLabel.textColor = [UIColor redColor];
+    }else{
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
     
     return cell;
 }
@@ -235,17 +353,70 @@
     
 }
 
+#pragma mark - AVAudioPlayerDelegate
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    JNLog(@"一首歌曲播放完毕");
+    self.player = nil;
+}
+
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
+{
+    JNLog(@"歌曲播放失败");
+}
+
 #pragma mark - Action
 
-- (void)progressSliderChange:(id)sender
+- (void)progressSliderChange:(UISlider *)sender
 {
-    if ([sender isKindOfClass:[UISlider class]]) {
-        UISlider *slider = sender;
-        CGFloat value = slider.value;
-        NSLog(@"%.2f",value);
+    self.player.currentTime = sender.value * self.player.duration;
+}
+
+- (void)change
+{
+    // 获取当前播放时间 总时间  刷新进度条
+    self.curTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",(NSInteger)self.player.currentTime/60,(NSInteger)self.player.currentTime%60];
+    self.totalTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",(NSInteger)self.player.duration/60,(NSInteger)self.player.duration%60];
+    self.progressSlider.value = self.player.currentTime/self.player.duration;
+    
+    // 歌词同步
+    [self syncWords];
+}
+
+- (void)syncWords
+{
+    for (int i = 0; i < self.lyricsModel.timeArr.count; i++) {
+        if (self.player.currentTime < [self.lyricsModel.timeArr[i] floatValue]) {
+            // 第一次找到当前播放时间 小于 遍历中的时间数组 i对应的上一行就是应该被标记的行号
+            self.row = (i == 0)?0:(i-1);
+            break;
+        }
+    }
+    [self.tableView reloadData];
+    // 滚动到对应行的歌词
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.row inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
+
+- (void)lastSong:(UIButton *)sender
+{
+    
+}
+
+- (void)playSong:(UIButton *)sender
+{
+    if (self.player.isPlaying) {
+        [self.player pause];
+        [sender setTitle:@"播放" forState:UIControlStateNormal];
+    }else{
+        [self.player play];
+        [sender setTitle:@"暂停" forState:UIControlStateNormal];
     }
 }
 
+- (void)nextSong:(UIButton *)sender
+{
+    
+}
 
 -(void)layoutSubviews
 {
@@ -281,8 +452,28 @@
     
     [self.bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.left.right.mas_equalTo(self);
-        make.height.mas_equalTo(80);
+        make.height.mas_equalTo(80*JN_FIT_WIDTH);
     }];
+    [self.lastButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.bottomView);
+        make.left.mas_equalTo(self.bottomView);
+        make.right.mas_equalTo(self.playButton.mas_left);
+        make.height.mas_equalTo(40*JN_FIT_WIDTH);
+    }];
+    [self.playButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.bottomView);
+        make.centerX.mas_equalTo(self.bottomView);
+        make.width.mas_equalTo(60*JN_FIT_WIDTH);
+        make.height.mas_equalTo(40*JN_FIT_WIDTH);
+    }];
+    [self.nextButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.bottomView);
+        make.right.mas_equalTo(self.bottomView);
+        make.left.mas_equalTo(self.playButton.mas_right);
+        make.height.mas_equalTo(40*JN_FIT_WIDTH);
+    }];
+    
+    
     
     
 }
